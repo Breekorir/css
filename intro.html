@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>Intro to CSS</title>
+    <link rel ="stylesheet" href="intro.css"/>
+    
   </head>
   <body>
     <h1>CSS- Cascading styles sheets</h1>
@@ -37,17 +39,32 @@
 
         <h2>where do we put our CSS</h2>
         <ul>
-            <li>Inline CSS</li>
+            <li>
+                <h3>Inline CSS</h3>
+                <p> >we use this style attribute on individual elements .(code is less reuseable
+                    and makes maintaining the application dificult
+                </p>
+            </li>
             <li>
             <h3>internal CSS</h3>
             
-            <p></p>
+            <p>using style element. (doing styles within the same file as structure is not recommended )
+                Styles wont be shared to other html pages
+            </p>
             </li>
             <li>
             <h3>external CSS (Recommended)</h3>
-            <p></p>
+            <p>using a different file(.css)linked to a html page using the link element usually placed in the head 
+                of a html page
+            </p>
             </li>
         </ul>
+        <style>
+            p{
+                color
+
+            }
+        </style>
     <code>
         selector{
             property: values;
